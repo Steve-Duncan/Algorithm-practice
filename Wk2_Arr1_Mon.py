@@ -35,6 +35,11 @@ def InsertAt(arr,ndx,val):
 	return arr
 
 
+def PopFront(arr):
+	front = arr.pop(0)
+	return front
+
+
 print "\n############# Push Front #################"
 arr = [34, 57, 89, 35,21]	#starting array
 valToInsert = 53			#value to insert
@@ -51,3 +56,8 @@ print "Before insert:",arr
 print "Value to insert:",valToInsert
 print "Insert at index:",ndx
 print "After insert:",InsertAt(arr,ndx,valToInsert)
+
+
+print "\n############# Pop Front #################"
+arr = [34, 57, 89, 35,21]	#starting array
+print "Remove first value:",PopFront(arr)
